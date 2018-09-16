@@ -3,6 +3,7 @@
 </h1>
 <div>
   <ul>
+    <li *ngIf = '!users'>Loading...</li>
     <li *ngFor= 'let user of users'>
       <ul>
         <li><a routerLink='/details/{{user.id}}'>{{user.name}}</a></li>
